@@ -13,13 +13,24 @@
         android:roundIcon="@mipmap/iconfinder_3057681_media_network_social_tumblr_icon_512px"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trello">
-        <activity android:name=".activities.MyProfileActivity"
+        <activity
+            android:name=".activities.CreateBoardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Trello.palette_1">
 
 
         </activity>
-        <activity android:name=".activities.BaseActivity">
+        <activity
+            android:name=".activities.MyProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Trello.palette_1">
+
+
+        </activity>
+        <activity
+            android:name=".activities.BaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Trello.palette_1">
 
 
         </activity>
@@ -34,6 +45,7 @@
             android:name=".activities.SignUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Trello.NoActionBar">
+
 
         </activity>
         <activity

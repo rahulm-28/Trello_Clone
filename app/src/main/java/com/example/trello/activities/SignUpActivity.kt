@@ -29,7 +29,7 @@ class SignUpActivity : BaseActivity() {
         }
     }
 
-    fun setUpActionBar() {
+    private fun setUpActionBar() {
         setSupportActionBar(toolbar_sign_up_activity)
 
         val actionBar = supportActionBar

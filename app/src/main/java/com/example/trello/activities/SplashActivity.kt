@@ -44,7 +44,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun goToIntroOrMainActivityDependingOnUser() {
-        val currentUserId = FirestoreClass().getCurrentUserId()
+        val currentUserId = FirestoreClass().getCurrentUserID()
         Handler(Looper.getMainLooper()).postDelayed({
             if (currentUserId.isNotEmpty()) {
                 startActivity(Intent(this, MainActivity::class.java))

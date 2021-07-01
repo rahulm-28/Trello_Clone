@@ -14,13 +14,10 @@ class IntroActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
-
         doFullScreen()
-
         btn_sign_up_intro.setOnClickListener {
             goToSignUpPage()
         }
-
         btn_sign_in_intro.setOnClickListener {
             goToSignInPage()
         }

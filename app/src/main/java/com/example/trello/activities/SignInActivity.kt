@@ -40,8 +40,8 @@ class SignInActivity : BaseActivity() {
     }
 
     private fun signInRegisteredUser() {
-        val email: String = et_email.text.toString().trim() { it <= ' ' }
-        val password: String = et_password.text.toString().trim() { it <= ' ' }
+        val email: String = et_email.text.toString().trim { it <= ' ' }
+        val password: String = et_password.text.toString().trim { it <= ' ' }
 
         if (validateForm(email, password)) {
             showProgressDialog(resources.getString(R.string.please_wait))

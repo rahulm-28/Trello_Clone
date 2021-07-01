@@ -41,7 +41,7 @@ open class BaseActivity : AppCompatActivity() {
         mProgressDialog.dismiss()
     }
 
-    fun gertCurrentUserID(): String {
+    fun getCurrentUserID(): String {
         return FirebaseAuth.getInstance().currentUser!!.uid
     }
 
@@ -73,42 +73,4 @@ open class BaseActivity : AppCompatActivity() {
         )
         snackBar.show()
     }
-
-//    fun setUpActionBar(toolbar: Toolbar, drawable: View) {
-////        setSupportActionBar(toolbar_sign_in_activity)
-//        setSupportActionBar(toolbar)
-//
-//        val actionBar = supportActionBar
-//        if (actionBar != null) {
-//            actionBar.setDisplayHomeAsUpEnabled(true)
-////            actionBar.setHomeAsUpIndicator(R.drawable.ic_black_color_back_24dp)
-//            actionBar.setHomeAsUpIndicator(R.drawable.ic_black_color_back_24dp)
-//        }
-//
-//        toolbar.setNavigationOnClickListener {
-//            onBackPressed()
-//        }
-//    }
-//
-//    @SuppressLint("NewApi")
-//    fun doFullScreen() {
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-//            window.insetsController?.hide(WindowInsets.Type.statusBars())
-////            window.attributes.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
-//            window.attributes.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_NEVER
-//            window.setFlags(
-//                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-//                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-//            )
-//        } else {
-//            window.setFlags(
-//                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//                WindowManager.LayoutParams.FLAG_FULLSCREEN
-//            )
-//
-//            window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-////            window.attributes.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
-//            window.attributes.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_NEVER
-//        }
-//    }
 }
