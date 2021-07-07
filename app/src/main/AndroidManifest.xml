@@ -13,6 +13,37 @@
         android:roundIcon="@mipmap/iconfinder_3057681_media_network_social_tumblr_icon_512px"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trello">
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity android:name=".activities.CardDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Trello.palette_1">
+
+
+        </activity>
+        <activity
+            android:name=".activities.MembersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Trello.palette_1">
+
+
+        </activity>
+        <activity
+            android:name=".activities.TaskListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Trello.palette_1">
+
+
+        </activity>
         <activity
             android:name=".activities.CreateBoardActivity"
             android:screenOrientation="portrait"
@@ -73,6 +104,15 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>
